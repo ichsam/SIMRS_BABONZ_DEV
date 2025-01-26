@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospihub App</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+
+    .sidebar {
+      width: 80px;
+      background-color: #007bff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .sidebar img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 24px;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      background-color: #e9ecef;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 {
+      font-size: 20px;
+      color: #343a40;
+    }
+
+    .header .icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .header .icons img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .card span {
+      font-size: 14px;
+      color: #495057;
+    }
+
+    .footer {
+      background-color: #e9ecef;
+      text-align: center;
+      padding: 10px;
+      font-size: 12px;
+      color: #868e96;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <img src="logo.png" alt="Hospihub Logo">
+    <a href="#">🏠</a>
+    <a href="#">📊</a>
+    <a href="#">⚙️</a>
+    <a href="#">❓</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="#">⚙️</a>
+
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1>HOSPIHUB APP</h1>
+      <div class="icons">
+        <img src="search-icon.png" alt="Search">
+        <img src="notification-icon.png" alt="Notifications">
+        <img src="user-icon.png" alt="User Profile">
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="card">
+        <img src="home-icon.png" alt="Home">
+        <span>HOME</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Pasien">
+        <span>PENDAFTARAN PASIEN</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Rawat Jalan">
+        <span>RAWAT JALAN</span>
+      </div>
+      <div class="card">
+        <img src="rawat-inap-icon.png" alt="Rawat Inap">
+        <span>RAWAT INAP</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Instalasi Gawat Darurat">
+        <span>IGD</span>
+      </div>
+      <div class="card">
+        <img src="farmasi-icon.png" alt="Farmasi">
+        <span>FARMASI</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Apotek Rajal">
+        <span>APOTEK RAJAL</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Apotek Ranap">
+        <span>APOTEK RANAP</span>
+      </div>
+      <div class="card">
+        <img src="radiologi-icon.png" alt="Radiologi">
+        <span>RADIOLOGI</span>
+      </div>
+      <div class="card">
+        <img src="lab-icon.png" alt="Laboratorium">
+        <span>LABORATORIUM</span>
+      </div>
+      <div class="card">
+        <img src="operation-icon.png" alt="Operasi">
+        <span>OPERASI</span>
+      </div>
+      <div class="card">
+        <img src="rekam-medis-icon.png" alt="Rekam Medis">
+        <span>REKAM MEDIS</span>
+      </div>
+      <div class="card">
+        <img src="icu-icon.png" alt="ICU">
+        <span>ICU</span>
+      </div>
+      <div class="card">
+        <img src="perina-icon.png" alt="Perina">
+        <span>PERINA</span>
+      </div>
+      <div class="card">
+        <img src="apotek-icon.png" alt="Apotek Rawat Inap">
+        <span>APOTEK RAWAT INAP</span>
+      </div>
+      <div class="card">
+        <img src="igd-icon.png" alt="IGD">
+        <span>IGD</span>
+      </div>
+      <div class="card">
+        <img src="whatsapp-icon.png" alt="WhatsApp">
+        <span>WHATSAPP</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Master Data">
+        <span>MASTER DATA</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Profil">
+        <span>PROFIL</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Presensi">
+        <span>PRESENSI</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Dokter Rajal">
+        <span>DOKTER RAJAL</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Dokter Ranap">
+        <span>DOKTER RANAP</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Dokter IGD">
+        <span>DOKTER IGD</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Kasir Rajal">
+        <span>KASIR RAJAL</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Kasir Ranap">
+        <span>KASIR RANAP</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Ajungan">
+        <span>ANJUNGAN</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Manajemen">
+        <span>MANAJEMEN</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="keuangan">
+        <span>KEUANGAN</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Satu Sehat">
+        <span>SATU SEHAT</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="MJKN">
+        <span>MJKN</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Icare">
+        <span>ICare</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="ICD 9">
+        <span>ICD 9</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="ICD 10">
+        <span>ICD 10</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Rekap Surat">
+        <span>REKAP ALL SURAT</span> 
+        <!-- nnti di dalam modul all surat ada yang nama nya surat sakit, surat sehat, surat rujukan -->
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="V Claim">
+        <span>VCLAIM REQUEST</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Veronisa">
+        <span>VERONISA</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Penjualan">
+        <span>PENJUALAN</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Oral Diagnostig">
+        <span>ORAL DIAGNOSTIG</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Modul">
+        <span>MODUL-MODUL</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Pengguna">
+        <span>PENGGUANA</span>
+      </div>
+      <div class="card">
+        <img src="rawat-jalan-icon.png" alt="Kepegawaian">
+        <span>KEPEGAWAIAN</span>
+      </div>
+      <div class="card">
+        <img src="config-icon.png" alt="Config">
+        <span>CONFIG</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; HOSPIHUB 2025
+    </div>
+  </div>
+</body>
+</html>
